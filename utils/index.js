@@ -40,22 +40,4 @@ const queryConstructor = (query, sortBy, item) => {
     return { params, limit, skip, sort }
 }
 
-const fileModifier = (req) => {
-    let { body, file, files, params } = req
-    let mediaUrl = [];
-    let formBody = {}
-    if (files) {
-        for (let file of files) {
-            const { path } = file
-            mediaUrl.push(path)
-        }
-        formBody = { image: mediaUrl, body, params }
-    }
-    else if (file) { //if only one image is uploaded
-        const { path } = file
-        formBody = { image: path, body, params }
-    }
-    return formBody
-}
-
-module.exports = { queryConstructor, fileModifier }
+module.exports = { queryConstructor }

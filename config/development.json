@@ -2,7 +2,7 @@
     "name": "betadata - dev",
     "database":{
         "type": "MongoDB",
-        "connectionString": "mongodb+srv://betadata:Betadata@cluster0.ibgfs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        "connectionString": "mongodb+srv://betadata:Betadata@cluster0.ibgfs.mongodb.net/betterdata?retryWrites=true&w=majority"
     },
     "port": 3000
 }

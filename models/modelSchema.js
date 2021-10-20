@@ -1,8 +1,5 @@
 const mongoose = require('mongoose')
 const modelSchema = new mongoose.Schema({
-  // modelId: {
-  //   type: mongoose.Schema.Types.ObjectId
-  // },
   batchSize: {
     type: Number
   },
